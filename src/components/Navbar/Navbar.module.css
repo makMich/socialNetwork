@@ -1,0 +1,37 @@
+.nav {
+    grid-area: nav;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+}
+
+.settings {
+    font-size: large;
+    margin: 25px 15px;
+
+}
+
+.settings a {
+    color: white;
+    text-decoration: none;
+}
+
+.settings .activeLink {
+    color: gold;
+}
+
+.item {
+    font-size: large;
+    margin: 5px 15px;
+}
+
+.item a{
+    color: white;
+    text-decoration: none;
+}
+
+.item.NawLink {
+}
+
+.item .activeLink {
+    color: gold;
+}

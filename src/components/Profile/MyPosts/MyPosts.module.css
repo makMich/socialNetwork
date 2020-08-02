@@ -1,0 +1,49 @@
+.profile {
+    grid-area: profile;
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+.item {
+    color: yellow;
+}
+
+.headerPost {
+    margin: 0px 10px;
+}
+
+.textArea {
+    display: inline;
+}
+
+.buttonAdd {
+    display: inline-block;
+}
+
+.button {
+    background-color: green;
+    width: 50px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.2s;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: #666666;
+    background-color: #3e8e41;
+}
+
+.posts {
+
+}

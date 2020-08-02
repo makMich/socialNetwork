@@ -1,0 +1,27 @@
+.dialogs {
+    display: grid;
+    font-family: Sans-Serif;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogs .dialogsItems {
+    font-size: large;
+    margin: 10px;
+}
+
+.dialogsItems a {
+    text-decoration: none;
+}
+
+.dialogs .item {
+    padding: 7px;
+}
+
+.messages {
+    margin: 10px;
+    font-size: large;
+}
+
+.messages .message {
+    padding: 7px 5px;
+}
