@@ -10,21 +10,13 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        debugger;
-        props.addPost();
-       // props.updateNewPostText("");
+        props.dispatch({type: 'ADD-POST'})
     };
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
-    }
-
-    //Как пример, можно так
-    // let addPost = () => {
-    //     document.getElementById('new-post');
-    //     alert('aaa')
-    // };
+        props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text});
+    };
 
     return (
         <div>
@@ -33,7 +25,6 @@ const MyPosts = (props) => {
             </div>
             <div>
                 <div className={s.textArea}>
-                    {/*<textarea id='new-post'></textarea>*/}
                     <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}/>
                 </div>
                 <div className={s.buttonAdd}>
